@@ -1,0 +1,75 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-shelf {
+    text-align: center; /* Centers the inline-block elements */
+    padding: 30px;
+}
+
+/* Product Box Styling (Step 3, 4, 6) */
+.product-box {
+    /* Display boxes side by side (Step 3) */
+    display: inline-block; 
+    
+    /* Fixed size for uniformity */
+    width: 250px;
+    
+    /* Spacing between boxes (Step 4) */
+    
+    border: 1px solid #ccc; 
+    padding: 15px; /* Padding inside the box (Step 4) */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Align content inside boxes (Step 6) */
+    text-align: center; 
+    /* Needed for the hover effect */
+        padding: 15px;
+}
+
+/* Hover Effect (Step 5) */
+.product-box:hover {
+    outline: 3px solid #007bff; 
+    /* Offset the outline so it doesn't collide with the border */
+}
+
+/* Image Styling */
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+/* Price Styling */
+    font-size: 1.3em;
+    color: #cc0000;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Buy Link Styling */
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;

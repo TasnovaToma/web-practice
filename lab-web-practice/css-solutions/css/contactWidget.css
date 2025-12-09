@@ -1,0 +1,53 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    padding: 20px 50px;
+    height: 1500px;
+    height: 1500px; /* Force the page to be long and scrollable */
+    background-color: #f4f4f4;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+ .contact-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    padding: 15px;
+    border: 2px solid #0056b3;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+/* Links inside widget */
+.contact-widget a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+/* Hover Effect (Step 6) */
+.contact-widget:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}

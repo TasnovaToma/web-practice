@@ -1,0 +1,56 @@
+/* Basic Reset and Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px; /* Margin to separate header from profile section (Step 5) */
+}
+
+/* Profile Section Styling (Step 4, 5, 8) */
+.profile-container {
+    /* Center the section using fixed width and margin: auto (Step 4) */
+    width: 60%; /* Example width (Step 6) */
+    margin: 30px auto;
+    
+    /* Box Model Applied */
+    padding: 20px; /* Padding inside the box (Step 5) */
+    border: 1px solid #ccc; /* Border around the section (Step 5) */
+    background-color: #ffffff; /* Light background color (Step 8) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    border-radius: 8px;
+    text-align: center; /* Center-align content inside the box (Step 4) */
+}
+
+/* Profile Photo Styling (Step 7) */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    /* Round the student image corners (Step 7) */
+    border-radius: 50%; 
+    border: 3px solid #007bff;
+    margin-bottom: 15px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px; /* Margin to separate footer (Step 5) */
+}
+
+/* Example of using a different CSS unit (em) (Step 6) */
+.profile-container p {
+    font-size: 1.1em; 
+    line-height: 1.5;
+}

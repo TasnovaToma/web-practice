@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Navigation Bar</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        
+        nav {
+            background-color: #333; /* Dark background color (Step 6) */
+            text-align: center; /* Center links in the nav bar */
+            padding: 10px 0;
+            width: 100%; /* Spans full page width (Step 7) */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* List Item Styling (Step 2) */
+        nav ul li {
+            /* Display links horizontally (Step 2) */
+            display: inline-block; 
+            margin: 0 15px; /* Margin for spacing between links (Step 3) */
+        }
+
+        /* Link Styling */
+        nav ul li a {
+            color: white;
+            padding: 10px 15px; /* Padding for spacing around link text (Step 3) */
+            text-decoration: none; /* Remove underlines (Step 4) */
+            /* Ensure block-level styling can be applied for better hover/padding area */
+            display: block; 
+        }
+
+        /* Hover Effect (Step 5) */
+        nav ul li a:hover {
+            background-color: #555; /* Change background color on hover */
+            color: #ffcc00; /* Change text color on hover */
+        }
+
+        /* Content Area for context */
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h2>Welcome to the Homepage</h2>
+        <p>This is the main content of the page. The navigation bar above stays neatly at the top.</p>
+    </div>
+
+</body>
+</html>

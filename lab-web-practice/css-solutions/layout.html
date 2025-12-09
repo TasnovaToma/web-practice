@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-section Inline-Block Layout</title>
+    <link rel="stylesheet" href="./css/layout.css">
+</head>
+<body>
+
+    <header>
+        <h1>Daily News Portal Layout Demo</h1>
+    </header>
+
+    <div class="layout-container">
+        
+        <div class="column sidebar">
+            <h2>Categories</h2>
+            <p>Use this area for navigation links or category lists. The display: inline-block property allows this box to sit perfectly next to the main content.</p>
+            <ul>
+                <li>World News</li>
+                <li>Technology</li>
+                <li>Lifestyle</li>
+            </ul>
+        </div>
+        
+        <div class="column main-content">
+            <h2>Featured Articles</h2>
+            <p>This is the primary area for news articles. It takes up the largest portion of the available width (60%) and maintains its position horizontally with the other columns.</p>
+            <p>We're using different widths and background colors to clearly separate the sections.</p>
+        </div>
+        
+        <div class="column advertisement">
+            <h2>Adverts</h2>
+            <p>This panel is reserved for advertisements or quick summaries. Ensure there is no extra whitespace in the HTML between the closing </div> of the previous element and the opening <div> of this element, or use font-size: 0 on the parent container, to prevent wrapping due to inline-block whitespace rules.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Multi-section Layout Demo</p>
+    </footer>
+
+</body>
+</html>

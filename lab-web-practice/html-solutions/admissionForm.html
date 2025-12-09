@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Online Admission Form for New Students">
+    <title>University Admission Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>University Online Admission Form</h1>
+        <p>Please fill out all required fields to submit your application.</p>
+        <hr>
+    </header>
+
+    <main>
+        <form action="/submit-application" method="POST">
+
+            <fieldset>
+                <legend>✅ Personal Information</legend>
+
+                <div>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required maxlength="100">
+                </div>
+                
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div>
+                    <label>Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>📚 Academic Information</legend>
+
+                <div>
+                    <label for="department">Preferred Department:</label>
+                    <select id="department" name="department" required>
+                        <option value="">-- Select Department --</option>
+                        <option value="cs">Computer Science (CS)</option>
+                        <option value="eee">Electrical & Electronic Engineering (EEE)</option>
+                        <option value="civil">Civil Engineering</option>
+                        <option value="bba">Business Administration (BBA)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Areas of Interest (Select all that apply):</label><br>
+                    <input type="checkbox" id="ai" name="interest" value="ai">
+                    <label for="ai">Artificial Intelligence</label><br>
+                    <input type="checkbox" id="webdev" name="interest" value="webdev">
+                    <label for="webdev">Web Development</label><br>
+                    <input type="checkbox" id="robotics" name="interest" value="robotics">
+                    <label for="robotics">Robotics</label><br>
+                    <input type="checkbox" id="finance" name="interest" value="finance">
+                    <label for="finance">Finance</label>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>📎 Document Upload</legend>
+
+                <div>
+                    <label for="transcript">Upload Academic Transcript (PDF/Image):</label>
+                    <input type="file" id="transcript" name="transcript" accept=".pdf,image/*" required>
+                </div>
+
+                <div>
+                    <label for="resume">Upload Resume/CV (PDF):</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf">
+                </div>
+            </fieldset>
+
+            <div>
+                <button type="submit">Submit Application</button>
+                <button type="reset">Reset Form</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p><small>Note: This is a practice form. Data will not be stored.</small></p>
+    </footer>
+
+</body>
+</html>

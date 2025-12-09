@@ -1,0 +1,63 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #eee;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Parent Container for alignment */
+.layout-container {
+    text-align: center; /* Centers the inline-block children */
+    padding: 0 10px;
+    /* Optional: To combat the whitespace issue with inline-block, you can set font-size: 0 here */
+    /* font-size: 0; */
+}
+/* Column Styling (Step 2, 4) */
+.column {
+    /* Display columns side-by-side (Step 2) */
+    display: inline-block; 
+    
+    /* Spacing and Borders (Step 4) */
+    border: 1px solid #ccc; 
+    padding: 15px; 
+    vertical-align: top; /* Align all boxes to the top */
+    
+    /* font-size: 16px; */
+}
+/* Specific Widths and Colors (Step 3) */
+.sidebar {
+    width: 20%; 
+    background-color: #f7f9fa;
+}
+.main-content {
+    width: 58%; /* Using 58% + 20% + 20% = 98% (Allows for 2% margin/border space) */
+    background-color: white;
+}
+
+.advertisement {
+    width: 15%; /* Adjusting width to ensure all three fit and align properly (20% + 58% + 15% = 93%) */
+    background-color: #fff8e1;
+}
+
+/* Content inside columns */
+.column h2 {
+    color: #34495e;
+    margin-top: 0;
+}
+
+/* Footer Styling */
+footer {
+    clear: both; /* Ensures footer is below all floating/inline-block elements */
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

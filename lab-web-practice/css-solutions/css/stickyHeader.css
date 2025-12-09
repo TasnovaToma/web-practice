@@ -1,0 +1,61 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Sticky Header Styling (Step 3, 4) */
+.sticky-header {
+    /* Apply sticky positioning (Step 3) */
+    position: sticky; 
+    /* Set the scroll threshold to the very top (Step 3) */
+    top: 0; 
+    
+    background-color: #2c3e50; /* Background color (Step 4) */
+    color: white;
+    padding: 15px 20px; /* Padding (Step 4) */
+    text-align: center;
+    border-bottom: 3px solid #3498db; /* Border-bottom for visibility (Step 4) */
+    z-index: 100; /* Ensure it stays above other content */
+}
+
+.sticky-header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.sticky-header nav {
+    margin-top: 5px;
+}
+
+.sticky-header nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+/* Main Content Area Styling (Step 5) */
+.content {
+    /* Add top margin equal to or greater than the header's height to prevent content from being hidden (Step 5) */
+    padding: 20px 5%; 
+    line-height: 1.8;
+    
+    /* We estimate the header height to be around 75px, so we add a matching margin to ensure content is below it */
+    margin-top: 75px; 
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Handling Demo</title>
+    <link rel="stylesheet" href="./css/overflow.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Overflow Property Demonstration</h1>
+    </header>
+
+    <div class="container">
+        <div class="box visible-box">
+            <h2>Overflow: visible</h2>
+            <p>This is a fixed-size box (300px wide, 200px high) to demonstrate overflow handling. The content inside this box is intentionally long to exceed the boundaries. When set to **visible**, the content simply spills out of the container and overlaps the surrounding elements without showing scrollbars. The container's border only encloses the set dimensions, not the spilling text.</p>
+        </div>
+
+        <div class="box hidden-box">
+            <h2>Overflow: hidden</h2>
+            <p>This is a fixed-size box (300px wide, 200px high) to demonstrate overflow handling. The content inside this box is intentionally long to exceed the boundaries. When set to **hidden**, any content that exceeds the box's defined borders is simply clipped or cut off. Scrollbars are never shown, and the overflowing content is entirely invisible to the user.</p>
+        </div>
+
+        <div class="box scroll-box">
+            <h2>Overflow: scroll</h2>
+            <p>This is a fixed-size box (300px wide, 200px high) to demonstrate overflow handling. The content inside this box is intentionally long to exceed the boundaries. When set to **scroll**, the box displays both horizontal and vertical scrollbars, regardless of whether the content is actually overflowing in both directions. This ensures the user knows they *can* scroll to view all content.</p>
+        </div>
+
+        <div class="box auto-box">
+            <h2>Overflow: auto</h2>
+            <p>This is a fixed-size box (300px wide, 200px high) to demonstrate overflow handling. The content inside this box is intentionally long to exceed the boundaries. When set to **auto**, the browser only displays a scrollbar if the content actually overflows in that direction. This is often the preferred and most flexible choice, as it uses screen space efficiently by hiding unnecessary scrollbars.</p>
+        </div>
+    </div>
+
+</body>
+</html>
