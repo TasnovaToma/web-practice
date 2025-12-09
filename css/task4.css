@@ -1,0 +1,27 @@
+body {
+    background-size: 10px 10px;
+    background-image:
+        linear-gradient(to right, #e0e0e0 1px, transparent 1px),
+        linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
+}
+
+.container {
+    width: 300px;  /* 30 grid squares */
+    height: 200px; /* 20 grid squares */
+    border: 2px solid black;
+    position: relative; /* Establishes positioning context [cite: 32] */
+    background-color: white;
+}
+
+.bottom-right-box {
+    width: 100px; /* Arbitrary size for display: 10 grid squares */
+    height: 50px; /* Arbitrary size for display: 5 grid squares */
+    border: 1px solid black;
+    position: absolute;
+    bottom: 10px; /* 1 grid square from bottom [cite: 33] */
+    right: 10px;  /* 1 grid square from right [cite: 33] */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
